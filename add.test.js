@@ -17,5 +17,11 @@ describe('Function to calculate adding integer values', () => {
         expect(add("1\n2,3")).toBe(6);
     });
 
+    test('should return the sum of custom delimiters patterns', () => {
+        expect(add("//;\n1;2")).toBe(3);
+        expect(add("//|\n1|2|3|4")).toBe(10);
+        expect(add("//:\n1:2:3:5:5")).toBe(16);
+    });
+
 
 });
