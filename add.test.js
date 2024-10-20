@@ -23,5 +23,10 @@ describe('Function to calculate adding integer values', () => {
         expect(add("//:\n1:2:3:5:5")).toBe(16);
     });
 
+    test('should return error for negative numbers', () => {
+        expect(() => add("//;\n1;2;-3")).toThrow('negative numbers not allowed -3');
+        expect(() => add("1, 3, -5")).toThrow('negative numbers not allowed -5');
+    });
+
 
 });
