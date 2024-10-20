@@ -36,6 +36,7 @@ console.log(add("//|\n1|2|3|4"));// output : 10
 console.log(add("//:\n1:2:3:5:5"));// output : 16
 //console.log(add("//;\n1;2;-3"));   // output : Error negative number -3
 //console.log(add("1, 3, -5"));   // output : Error negative number -5
+//console.log(add("1, 4, -13, -15"));
 
 //export add function
 module.exports = add;

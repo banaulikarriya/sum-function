@@ -28,5 +28,8 @@ describe('Function to calculate adding integer values', () => {
         expect(() => add("1, 3, -5")).toThrow('negative numbers not allowed -5');
     });
 
+    test('should return error for multiple negative numbers', () => {
+        expect(() => add("1, 4, -13, -15")).toThrow('negative numbers not allowed -13,-15');
+    });
 
 });
